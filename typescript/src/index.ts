@@ -28,7 +28,7 @@ while (1){
     console.log("3 - deleting an element");
     console.log("4 - tree output (traversal)");
     console.log("0 - exit");
-    let res = readlineSync.question('');
+    let res = readlineSync.question(' ');
   switch (res){
       case '1': {
           add();
@@ -36,12 +36,12 @@ while (1){
       }
       case '2': {
           let ser = readlineSync.question('Enter a value ');
-          if( b.search(Number(ser))===undefined) console.log("this key is not in the tree");
+          if( b.search(Number(ser))===undefined) console.log("this key is not in the tree ");
           else console.log("Key found");
           break;
       }
       case '3': {
-          let del = readlineSync.question('Enter the key value of the item you want to delete');
+          let del = readlineSync.question('Enter the key value of the item you want to delete ');
           b.delete(Number(del));
           break;
       }
@@ -53,7 +53,7 @@ while (1){
           process.exit(0)
       }
       default: {
-          console.log("Incorrect format enter the number 1-4 or 0");
+          console.log("Incorrect format enter the number 1-4 or 0 ");
           break;
       }
   }
